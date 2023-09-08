@@ -3,7 +3,7 @@ const Server = use('Server')
 
 const io = require('socket.io')(Server.getInstance(), {
   cors: {
-    origin: 'http://127.0.0.1:3000',
+    origin: 'http://0.0.0.0:3000',
     methods: ['GET', 'POST'],
     credentials: true,
   },

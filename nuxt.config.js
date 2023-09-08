@@ -5,7 +5,7 @@ export default {
   ssr: false,
 
   server: {
-    host: '127.0.0.1',
+    host: '0.0.0.0',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -71,7 +71,7 @@ export default {
     sockets: [
       {
         name: 'main',
-        url: process.env.BASE_URL + '/' || 'http://127.0.0.1:3333',
+        url: process.env.BASE_URL + '/' || 'http://0.0.0.0:3333',
       },
     ],
   },
@@ -176,7 +176,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.BASE_URL || 'http://127.0.0.1:3333',
+    baseURL: process.env.BASE_URL || 'http://0.0.0.0:3333',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -47,6 +47,10 @@ class User extends Model {
     return this.hasMany('App/Models/Token')
   }
 
+  coinflip() {
+    return this.hasOne('App/Models/CoinflipBet', 'id', 'user_id')
+  }
+
   crashes() {
     return this.hasMany('App/Models/CrashBet', 'id', 'user_id')
   }

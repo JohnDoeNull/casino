@@ -7,6 +7,8 @@ const User = use('App/Models/User')
 const Crash = use('App/Models/Crash')
 const CrashBet = use('App/Models/CrashBet')
 
+const coinflip_control = require('./games/coinflip')
+
 const jwt = require('jwt-simple')
 const rnd = require('random-number')
 
@@ -27,6 +29,8 @@ async function getUser(socket) {
   const user = await User.find(jwtData.uid)
   return user
 }
+
+coinflip_control.start(io, getUser)
 
 let current = 1
 
@@ -191,7 +195,7 @@ Event.on('crash::start', async () => {
 async function startCrash() {
   const bots = await User.query()
     .where('role_id', 2)
-    .orderByRaw('RAND()')
+    .orderByRaw('random()')
     .fetch()
   const fakes = bots.toJSON().slice(0, rnd({ min: 0, max: 12 }))
   if (!fakes.length) return
