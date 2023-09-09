@@ -10,7 +10,7 @@
       </t-button>
     </h1>
     <div class="grid grid-cols-8 gap-1.5">
-      <div class="col-span-8 p-12 bg-white lg:col-span-3 rounded-xl">
+      <div class="col-span-8 p-12 bg-div-color lg:col-span-3 rounded-xl">
         <form class="flex flex-col" @submit.prevent="betPlace">
           <label class="mb-3 font-semibold text-md" for="amount">{{
             $t('bet-amount')
@@ -82,7 +82,7 @@
         </form>
       </div>
       <div class="col-span-8 lg:col-span-5">
-        <div class="px-8 py-6 bg-white rounded-xl">
+        <div class="px-8 py-6 bg-div-color rounded-xl">
           <crash-chart :socket="socket" />
         </div>
       </div>

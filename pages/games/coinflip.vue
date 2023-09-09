@@ -17,7 +17,7 @@
     <div class="modal-overlay" v-show="ShowJoin" @click="showModel(false)">
       <div class="modal" @click.stop>
         <h6>COINFLIP</h6>
-        <div class="col-span-8 p-12 bg-white lg:col-span-3 rounded-xl">
+        <div class="col-span-8 p-12 bg-div-color lg:col-span-3 rounded-xl">
           <label class="mb-3 font-semibold text-md" for="amount">{{
             $t('bet-amount')
           }}</label>

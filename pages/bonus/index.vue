@@ -1,42 +1,42 @@
 <template>
   <section class="container">
-    <h1 class="mb-6 text-2xl font-black uppercase">Бесплатные монеты</h1>
+    <h1 class="mb-6 text-2xl font-black uppercase">Free Fiat</h1>
     <div class="grid grid-cols-1 gap-4 lg:grid-cols-5">
       <div class="col-span-2">
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <free-wheel />
         </div>
       </div>
       <div class="col-span-3 space-y-3">
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <h2 class="mb-3 text-xl font-bold leading-none">
-            Подпишись на нас ВКонтакте
+            Join us at fiery.gg
           </h2>
           <p class="mb-3">
-            Вступите в нашу группу
+            Join our
             <a
               href="#"
               class="border-black border-dotted cursor-pointer border-b-1"
               target="_blank"
-              ><strong>vk.com/ezcash_official</strong></a
+              ><strong>discord</strong></a
             >
-            и получи дополнительно <strong>10</strong>
-            <CoinIcon class="inline-block" /> на баланс
+            and get extra <strong>10</strong>
+            <CoinIcon class="inline-block" /> in your balance
           </p>
           <t-button variant="primary">
             <div class="flex items-center">
               <VkIcon fill="#000000" class="inline-block w-4 h-4 mr-2" />
-              <span>Подписаться</span>
+              <span>fiery.gg</span>
             </div></t-button
           >
         </div>
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <h2 class="mb-3 text-xl font-bold leading-none">
-            Активируй промокод
+            Activate promotional code
           </h2>
           <p class="mb-3">
-            Выдаются в наших сообществах. Торопись, количество активации
-            ограничени!
+            Issued in our communities. Hurry up, the number of activations is
+            limited!
           </p>
           <form @submit.prevent="usePromocode">
             <label class="relative block">
@@ -48,19 +48,19 @@
               <t-input
                 v-model="promocode"
                 class="w-full pr-40 pl-14"
-                placeholder="Промокод"
+                placeholder="promocode"
               />
               <t-button
                 type="submit"
                 class="absolute transform -translate-y-1/2 right-2 top-1/2"
                 variant="primary"
-                >Активировать</t-button
+                >Activate</t-button
               >
             </label>
           </form>
         </div>
       </div>
-      <!-- <div class="col-span-1 p-8 space-y-3 bg-white rounded-xl">
+      <!-- <div class="col-span-1 p-8 space-y-3 bg-div-color rounded-xl">
         <h2 class="text-xl font-bold leading-none">Приглашайте друзей</h2>
         <p class="">
           Получайте до <strong>2.5%</strong> от ставок ваших друзей и до

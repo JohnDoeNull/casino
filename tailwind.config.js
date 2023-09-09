@@ -87,10 +87,11 @@ module.exports = {
           DEFAULT: '#2ba4e0',
           hover: '#1994d1',
         },
-        secondary: '#e3e2df',
+        secondary: '#000000',
         grayest: 'rgba(249,248,246,.3)',
-        cream: '#f9f8f6',
+        cream: '#21264a',
         dark: '#393835',
+        'div-color': '#21264a',
       },
       borderWidth: {
         1: '1px',

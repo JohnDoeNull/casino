@@ -19,7 +19,7 @@
             :to="{ name: 'free-coins' }"
             class="sidebar__link"
             :exact-active-class="`sidebar__link--active`"
-            >Бесплатные монеты</nuxt-link
+            >Free Coin</nuxt-link
           >
         </nav>
       </div>

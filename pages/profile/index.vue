@@ -7,7 +7,7 @@
     </h1>
     <div class="grid grid-cols-4 gap-3">
       <div class="col-span-4 space-y-3 lg:col-span-1">
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <div class="flex items-center space-x-4">
             <div class="relative rounded-full cursor-pointer group">
               <img
@@ -49,7 +49,7 @@
             </div>
           </div>
         </div>
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <h2 class="mb-3 text-lg font-semibold leading-none">
             {{ $t('socials') }}
           </h2>
@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="col-span-4 lg:col-span-3">
-        <div class="p-8 bg-white rounded-xl">
+        <div class="p-8 bg-div-color rounded-xl">
           <div class="grid grid-cols-1 gap-3 lg:grid-cols-2">
             <div class="space-y-3">
               <h2 class="mb-3 text-lg font-semibold">

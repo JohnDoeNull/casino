@@ -6,7 +6,7 @@
       </svg>
     </template>
     <template #header>
-      <h3>Вход</h3>
+      <h3>Login</h3>
     </template>
     <section-social class="mb-5" />
     <form class="grid grid-cols-1 gap-5" @submit.prevent="login">
@@ -15,7 +15,7 @@
           v-model="user.email"
           class="!pl-12"
           variant="strong"
-          placeholder="Логин или Email"
+          placeholder="Email"
         ></t-input>
         <img
           class="absolute transform -translate-y-1/2 top-1/2 left-4"
@@ -29,24 +29,24 @@
           class="!pl-12"
           variant="strong"
           type="password"
-          placeholder="Пароль"
+          placeholder="Password"
         ></t-input>
         <img
           class="absolute top-4 left-4"
           src="/img/icon/password.svg"
           alt=""
         />
-        <button
+        <!-- <button
           type="button"
           class="block mt-1 ml-auto text-xs font-semibold leading-none text-right text-primary"
         >
           Забыли пароль ?
-        </button>
+        </button> -->
       </div>
       <div class="grid grid-cols-1 gap-3">
         <t-button type="submit" variant="primary">
           <div class="flex items-center justify-center py-2">
-            <span>Войти в аккаунт</span>
+            <span>Login</span>
             <img class="ml-2" src="/img/icon/next.svg" alt="" />
           </div>
         </t-button>
@@ -55,7 +55,7 @@
           class="font-semibold text-primary"
           @click="showRegister"
         >
-          Создать аккаунт
+          Register
         </button>
       </div>
     </form>
@@ -89,4 +89,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+input {
+  background-color: #21264a;
+}
+</style>

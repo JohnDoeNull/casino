@@ -1,5 +1,5 @@
 <template>
-  <div class="p-12 bg-white rounded-xl">
+  <div class="p-12 bg-div-color rounded-xl">
     <h2 class="mb-3 font-semibold text-md">{{ $t('room-bets') }}</h2>
     <p v-if="!bets.length">{{ $t('no-bets') }}</p>
     <div v-else class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

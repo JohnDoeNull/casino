@@ -3,7 +3,7 @@
     <h1 class="mb-6 text-2xl font-black uppercase">Помощь</h1>
     <div class="grid grid-cols-1 gap-4 xl:gap-6 xl:grid-cols-4">
       <div
-        class="p-4 bg-white xl:p-12 xl:col-span-4 rounded-3xl help__annotation"
+        class="p-4 bg-div-color xl:p-12 xl:col-span-4 rounded-3xl help__annotation"
       >
         <p class="max-w-4xl">
           <b>Возникли вопросы?</b> Ознакомьтесь с ответами на самые популярные
@@ -14,7 +14,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center px-6 py-12 space-y-5 text-center bg-white rounded-3xl"
+        class="flex flex-col items-center px-6 py-12 space-y-5 text-center bg-div-color rounded-3xl"
       >
         <img src="/img/icon/clock.svg" alt="Часы работы" />
         <h2 class="text-lg font-semibold">Часы работы</h2>
@@ -29,7 +29,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-white rounded-3xl"
+        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-div-color rounded-3xl"
       >
         <img src="/img/icon/help-chat.svg" alt="Служба поддержки (LIVE)" />
         <h2 class="text-lg font-semibold">Служба поддержки (LIVE)</h2>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-white rounded-3xl"
+        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-div-color rounded-3xl"
       >
         <img src="/img/icon/help-email.svg" alt="Служба поддержки (EMAIL)" />
         <h2 class="text-lg font-semibold">Служба поддержки (EMAIL)</h2>
@@ -57,7 +57,7 @@
         </div>
       </div>
       <div
-        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-white rounded-3xl"
+        class="flex flex-col items-center px-3 py-12 space-y-5 text-center bg-div-color rounded-3xl"
       >
         <img src="/img/icon/help-email.svg" alt="Технический отдел (EMAIL)" />
         <h2 class="text-lg font-semibold">Технический отдел (EMAIL)</h2>
@@ -70,7 +70,7 @@
           <strong>48 часов</strong>
         </div>
       </div>
-      <div class="p-4 bg-white xl:p-12 xl:col-span-4 rounded-3xl">
+      <div class="p-4 bg-div-color xl:p-12 xl:col-span-4 rounded-3xl">
         <h2 class="mb-5 text-lg font-semibold">Ответы на популярные вопросы</h2>
         <div class="help__questions">
           <app-spoiler></app-spoiler>
@@ -78,7 +78,7 @@
           <app-spoiler></app-spoiler>
         </div>
       </div>
-      <div class="p-4 bg-white xl:p-12 xl:col-span-4 rounded-3xl">
+      <div class="p-4 bg-div-color xl:p-12 xl:col-span-4 rounded-3xl">
         <h2 class="mb-5 text-lg font-semibold">Ограничения</h2>
         <div class="grid gap-4 xl:grid-cols-3">
           <div class="flex items-start">
@@ -138,7 +138,7 @@ export default {
 <style lang="scss">
 .help {
   &__annotation {
-    background: url('/img/bg-help.svg') right bottom no-repeat, #ffffff;
+    background: url('/img/bg-help.svg') right bottom no-repeat #21264a;
   }
 
   &__questions {

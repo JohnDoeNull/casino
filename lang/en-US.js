@@ -16,7 +16,7 @@ export default {
   'description-dice':
     'A game mode in which you yourself choose the chance of winning, but remember: the higher the odds, the less chance of winning.',
   'description-coinflip':
-    'The classic «Coin» that everyone knows. You need to choose «heads» or «tails» and with a probability of 50% you will be able to double your money.',
+    'CoinFlip PvP. You need to choose Heads or Tails and with a probability of 50% you will be able to double your money.',
   bonus: 'Bonus',
   wallet: 'Wallet',
   fullname: 'Name and Surname',

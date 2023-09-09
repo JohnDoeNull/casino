@@ -3,7 +3,7 @@
 
 :root {
   --color-font: 57, 56, 53;
-  --color-bg: 249, 248, 246;
+  --color-bg: 40, 46, 84;
   --color-separate: 227, 226, 223;
   --color-primary: 255, 178, 0;
 
@@ -20,6 +20,7 @@ body {
   background-color: rgba(var(--color-bg), 1);
   @apply text-dark text-sm;
   font-family: Montserrat, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
   // font-size: 14px;
 }
 

@@ -2,7 +2,8 @@
   <div
     class="card-game"
     :class="{
-      'cursor-not-allowed pointer-events-none select-none filter-grayscale': disabled,
+      'cursor-not-allowed pointer-events-none select-none filter-grayscale':
+        disabled,
     }"
   >
     <h3 class="card-game__title">
@@ -52,7 +53,7 @@ export default {
 .card-game {
   padding: 3rem;
   border-radius: 20px;
-  background: url('/img/card-game-bg.svg') top right no-repeat, #ffffff;
+  background: top right no-repeat, #21264a;
   background-size: 65%;
   display: flex;
   flex-direction: column;

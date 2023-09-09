@@ -1,6 +1,6 @@
 <template>
-  <div class="p-4 font-semibold text-center bg-white rounded-xl text-md">
-    <div class="mb-2">через соц. сеть</div>
+  <div class="p-4 font-semibold text-center bg-div-color rounded-xl text-md">
+    <div class="mb-2">fiery.gg</div>
     <div class="flex items-center justify-center">
       <button
         type="button"

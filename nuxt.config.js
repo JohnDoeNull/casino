@@ -10,9 +10,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'casino',
+    title: 'BUXDROP',
     htmlAttrs: {
-      lang: 'ru',
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
@@ -24,8 +24,7 @@ export default {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap',
       },
     ],
   },
@@ -98,7 +97,7 @@ export default {
         icon: '/img/icon/ru.svg',
       },
     ],
-    defaultLocale: 'ru',
+    defaultLocale: 'en',
     lazy: true,
     langDir: 'lang/',
     strategy: 'no_prefix',

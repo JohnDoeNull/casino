@@ -6,7 +6,7 @@
       </svg>
     </template>
     <template #header>
-      <h3>Регистрация</h3>
+      <h3>Register</h3>
     </template>
     <section-social class="mb-5" />
     <form class="grid grid-cols-1 gap-5" @submit.prevent="register">
@@ -15,7 +15,7 @@
           v-model="user.username"
           class="!pl-12"
           variant="strong"
-          placeholder="Логин"
+          placeholder="Username"
         ></t-input>
         <img
           class="absolute transform -translate-y-1/2 top-1/2 left-4"
@@ -29,7 +29,7 @@
           class="!pl-12"
           variant="strong"
           type="password"
-          placeholder="Пароль"
+          placeholder="Password"
         ></t-input>
         <img
           class="absolute transform -translate-y-1/2 top-1/2 left-4"
@@ -43,7 +43,7 @@
           class="!pl-12"
           variant="strong"
           type="password"
-          placeholder="Повторите пароль"
+          placeholder="Repeat password"
         ></t-input>
         <img
           class="absolute transform -translate-y-1/2 top-1/2 left-4"
@@ -57,7 +57,7 @@
           class="!pl-12"
           variant="strong"
           type="email"
-          placeholder="Электронная почта"
+          placeholder="Email"
         ></t-input>
         <img
           class="absolute transform -translate-y-1/2 top-1/2 left-4"
@@ -66,14 +66,12 @@
         />
       </div>
       <p>
-        Регистрируясь вы принимаете условия<br />
-        <a href="#" class="font-semibold text-primary"
-          >пользовательского соглашения</a
-        >
+        By registering you accept our
+        <a class="font-semibold text-primary">terms and conditions</a>
       </p>
       <t-button type="submit" variant="primary">
         <div class="flex items-center justify-center py-2">
-          <span>Зарегистрироваться</span>
+          <span>Register</span>
           <img class="ml-2" src="/img/icon/next.svg" alt="" />
         </div>
       </t-button>

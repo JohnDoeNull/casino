@@ -10,7 +10,6 @@
       >
         <img src="/logo.svg" class="w-auto h-2/3" alt="" />
       </nuxt-link>
-      <app-language-switcher class="hidden xl:block" />
       <div class="flex-1 md:hidden !ml-0">
         <t-button
           class="header__burger"
@@ -105,7 +104,6 @@
 <script>
 import EditIcon from '@/static/img/icon/edit.svg?inline'
 import LogoutIcon from '@/static/img/icon/logout.svg?inline'
-import AppLanguageSwitcher from '@/components/ui/app-language-switcher.vue'
 import UserBalance from '../user/user-balance.vue'
 import AppSidebar from './app-sidebar.vue'
 
@@ -113,7 +111,6 @@ export default {
   components: {
     EditIcon,
     LogoutIcon,
-    AppLanguageSwitcher,
     UserBalance,
     AppSidebar,
   },
