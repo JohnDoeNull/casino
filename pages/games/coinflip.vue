@@ -211,12 +211,11 @@ export default {
   right: 0;
   display: flex;
   justify-content: center;
-  background-color: #000000da;
 }
 
 .modal {
   text-align: center;
-  background-color: white;
+  background-color: #21264a;
   height: 250px;
   width: 500px;
   margin-top: 10%;
