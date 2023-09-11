@@ -10,7 +10,9 @@
       </div>
     </div>
     <div class="flex flex-row space-x-1 items-left">
-      <t-input v-model="text" class=""></t-input>
+      <form @submit.prevent="sendText()">
+        <t-input v-model="text" class=""></t-input>
+      </form>
 
       <t-button variant="primary" @click="sendText" class="">
         <span class="flex-1">Send</span>
