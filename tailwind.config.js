@@ -29,7 +29,6 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: '1rem',
     },
     fontSize: {
       xs: '.75rem',

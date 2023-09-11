@@ -23,7 +23,7 @@
         </t-button>
       </div>
       <nav class="header__nav">
-        <nuxt-link
+        <!-- <nuxt-link
           :to="{ name: 'help' }"
           class="header__link"
           :exact-active-class="`header__link--active`"
@@ -34,7 +34,7 @@
           class="header__link"
           :exact-active-class="`header__link--active`"
           >{{ $t('bonus') }}</nuxt-link
-        >
+        > -->
       </nav>
       <user-balance class="hidden sm:flex" />
       <nuxt-link

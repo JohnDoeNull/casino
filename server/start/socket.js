@@ -8,6 +8,7 @@ const Crash = use('App/Models/Crash')
 const CrashBet = use('App/Models/CrashBet')
 
 const coinflip_control = require('./games/coinflip')
+const chat_control = require('./games/livechat')
 
 const jwt = require('jwt-simple')
 const rnd = require('random-number')
@@ -31,6 +32,7 @@ async function getUser(socket) {
 }
 
 coinflip_control.start(io, getUser)
+chat_control.start(io, getUser)
 
 let current = 1
 

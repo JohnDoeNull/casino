@@ -1,5 +1,5 @@
 <template>
-  <section class="container coinflip">
+  <section class="container">
     <h1 class="flex items-center mb-6 text-2xl font-black uppercase">
       <span class="flex-1">COINFLIP</span>
       <t-button variant="white" @click="showModel(true)">
@@ -7,12 +7,15 @@
       </t-button>
     </h1>
     <div
-      v-for="(bet_child, idx) in bets"
-      :key="bet_child.game.status"
-      :index="idx"
-      class="grid grid-cols-1 gap-4 xl:gap-6 xl:grid-cols-4 overflow-auto"
+      class="grid grid-cols-1 gap-4 xl:gap-6 xl:grid-cols-4 overflow-auto h-[vh50]"
     >
-      <bet-model :bet_prop="bet_child" :socket="socket"> </bet-model>
+      <div
+        v-for="(bet_child, idx) in bets"
+        :key="bet_child.game.status"
+        :index="idx"
+      >
+        <bet-model :bet_prop="bet_child" :socket="socket"> </bet-model>
+      </div>
     </div>
     <div class="modal-overlay" v-show="ShowJoin" @click="showModel(false)">
       <div class="modal" @click.stop>
