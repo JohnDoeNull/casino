@@ -7,12 +7,12 @@
         <TelegramIcon class="w-4 h-auto" />
         <div class="flex flex-col text-sm leading-none">
           <span class="mb-1">Телеграм</span>
-          <a href="https://t.me/ez_cash_gg" target="_blank">
-            <strong>@ez_cash_gg</strong>
+          <a href="https://t.me/buxdrop" target="_blank">
+            <strong>@buxdrop</strong>
           </a>
         </div>
       </div>
-      <div class="flex items-start space-x-2">
+      <!-- <div class="flex items-start space-x-2">
         <VkIcon class="w-4 h-auto" />
         <div class="flex flex-col text-sm leading-none">
           <span class="mb-1">ВКонтакте</span>
@@ -20,34 +20,33 @@
             <strong>ezcash_official</strong>
           </a>
         </div>
-      </div>
+      </div> -->
       <div class="flex items-start space-x-2">
         <EmailIcon class="w-4 h-auto" />
         <div class="flex flex-col text-sm leading-none">
           <span class="mb-1">Email</span>
           <a href="mailto:help@ezcash.gg" target="_blank">
-            <strong>help@ezcash.gg</strong>
+            <strong>help@buxdrop.gg</strong>
           </a>
         </div>
       </div>
-      <div class="flex flex-col space-y-1 leading-none">
+      <!-- <div class="flex flex-col space-y-1 leading-none">
         <a href="#" class="font-semibold">Пользовательское соглашение</a>
         <a href="#" class="font-semibold">Политика конфиденциальности</a>
         <nuxt-link :to="{ name: 'help' }" class="font-semibold"
           >Помощь</nuxt-link
         >
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>
 
 <script>
 import TelegramIcon from '@/static/img/icon/social/telegram.svg?inline'
-import VkIcon from '@/static/img/icon/social/vk.svg?inline'
 import EmailIcon from '@/static/img/icon/email.svg?inline'
 
 export default {
-  components: { TelegramIcon, VkIcon, EmailIcon },
+  components: { TelegramIcon, EmailIcon },
 }
 </script>
 
