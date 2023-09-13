@@ -1,10 +1,10 @@
 <template>
   <section class="container">
     <div class="flex flex-wrap h-16 space-x-3 md:space-x-8">
-      <div class="col-span-3 space-y-3 mb-5 w-[20vw]">
+      <div class="col-span-3 space-y-3 mb-5 w-[20vw] ml-auto">
         <chat></chat>
       </div>
-      <div class="flex-1">
+      <div class="flex-1 mr-auto">
         <div class="col-span-3 space-y-3 mb-5">
           <div class="p-8 bg-div-color rounded-xl">
             <h2 class="mb-3 text-xl font-bold leading-none">
