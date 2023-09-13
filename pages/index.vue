@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="flex flex-wrap h-16 space-x-3 md:space-x-8">
+    <div class="flex flex-wrap space-x-3 md:space-x-8">
       <div class="col-span-3 space-y-3 mb-5 w-[20vw] ml-auto">
         <chat></chat>
       </div>
