@@ -14,7 +14,7 @@
         <t-button
           class="header__burger"
           variant="white"
-          @click="activeMenu = !activeMenu"
+          @click="activeMenu = false"
         >
           <div class="flex items-center justify-center w-full">
             <img src="/img/icon/menu.svg" class="w-3 mr-2" alt="" />

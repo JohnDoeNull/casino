@@ -5,6 +5,7 @@
     <app-footer />
     <modal-register />
     <modal-auth />
+    <modal-wallet />
     <app-notification />
   </main>
 </template>
@@ -15,6 +16,7 @@ import AppFooter from '~/components/section/app-footer.vue'
 import ModalRegister from '~/components/modal/modal-register.vue'
 import ModalAuth from '~/components/modal/modal-auth.vue'
 import AppNotification from '~/components/ui/app-notification.vue'
+import modalWallet from '~/components/modal/modal-wallet.vue'
 export default {
   components: {
     appHeader,
@@ -22,6 +24,7 @@ export default {
     ModalRegister,
     ModalAuth,
     AppNotification,
+    modalWallet,
   },
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div class="flex flex-wrap space-x-3 md:space-x-8">
-      <div class="col-span-3 space-y-3 mb-5 w-[20vw] ml-auto">
+      <div class="col-span-3 hidden xl:block space-y-3 mb-5 w-[20vw] ml-auto">
         <chat></chat>
       </div>
       <div class="flex-1 mr-auto">

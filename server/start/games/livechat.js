@@ -1,4 +1,5 @@
 const User = use('App/Models/User')
+const axios = require('axios')
 
 const get_chats = async function () {
   return chats
@@ -22,7 +23,6 @@ const start = async (io, getUser) => {
           })
         })
         .on('chat:send', async (data, callback) => {
-          console.log(data)
           const user =
             socket.user && socket.user.length
               ? socket.user

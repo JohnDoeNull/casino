@@ -9,7 +9,7 @@
         </button>
         <h1 class="sidebar__title">МЕНЮ</h1>
         <nav class="sidebar__nav">
-          <nuxt-link
+          <!-- <nuxt-link
             :to="{ name: 'help' }"
             class="sidebar__link"
             :exact-active-class="`sidebar__link--active`"
@@ -20,7 +20,7 @@
             class="sidebar__link"
             :exact-active-class="`sidebar__link--active`"
             >Free Coin</nuxt-link
-          >
+          > -->
         </nav>
       </div>
       <div class="sidebar__footer">

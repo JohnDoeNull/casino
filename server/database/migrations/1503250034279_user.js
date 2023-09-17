@@ -17,6 +17,11 @@ class UserSchema extends Schema {
       table.string('first_name').nullable()
       table.string('last_name').nullable()
       table.string('avatar').nullable()
+      table.string('ltcaddress').nullable()
+      table.string('btcaddress').nullable()
+      table.string('ethaddress').nullable()
+      table.string('ltctaddress').nullable()
+
       table.integer('role_id').unsigned().defaultTo(role.toJSON().id)
       table.timestamps()
 

@@ -9,7 +9,9 @@
         }}</span>
       </div>
     </t-button>
-    <t-button variant="primary">{{ $t('wallet') }}</t-button>
+    <t-button @click="$modal.show('wallet')" variant="primary">{{
+      $t('wallet')
+    }}</t-button>
   </div>
 </template>
 

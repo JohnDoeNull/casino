@@ -33,7 +33,7 @@ const start = async (io, getUser) => {
     .on('connection', (socket) => {
       socket
         .on('game:status', async () => {
-          //await CoinflipGame.truncate()
+          //await CoinflipBet.truncate()
           socket.emit('game:status', {
             games: await get_games(),
           })

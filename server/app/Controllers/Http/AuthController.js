@@ -28,7 +28,7 @@ class AuthController {
 
       return response.json({
         status: 'success',
-        message: 'Вы успешно зарегистрированы!',
+        message: 'Successfull!',
         data: token,
       })
     } catch (error) {
@@ -77,6 +77,10 @@ class AuthController {
             'avatar',
             'balance',
             'balance_demo',
+            'ltctaddress',
+            'ethaddress',
+            'btcaddress',
+            'ltcaddress',
           ])
           .first(),
       },

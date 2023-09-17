@@ -4,7 +4,8 @@
   >
     <img
       v-if="game.game.status == 'await'"
-      src="/img/icon/clock.svg"
+      src="/logo.svg"
+      class="w-20"
       alt="Часы работы"
     />
     <img

@@ -36,7 +36,7 @@
               </p>
               <div class="flex items-center">
                 <p class="flex items-center font-semibold text-md">
-                  {{ user.fullname ? user.fullname : 'Установить' }}
+                  {{ user.fullname ? user.fullname : 'Settings' }}
                   <button
                     class="ml-1 transition-all rounded-md bg-cream hover:bg-primary"
                     type="button"
