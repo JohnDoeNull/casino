@@ -10,15 +10,15 @@
       </svg>
     </template>
     <template #header>
-      <h3>Смена имени и фамилии</h3>
+      <h3>Display Name</h3>
     </template>
     <form class="mb-4" @submit.prevent="updateUser('first_name')">
       <label>
-        <span class="block mb-2 opacity-80">Ваше имя</span>
+        <span class="block mb-2 opacity-80">First Name</span>
         <div class="relative">
           <t-input
             v-model="user.first_name"
-            placeholder="Введите имя"
+            placeholder="..."
             class="w-full pl-12"
           ></t-input>
           <img
@@ -31,7 +31,7 @@
             class="absolute transform -translate-y-1/2 right-2 top-1/2"
             variant="primary"
           >
-            <span class="hidden lg:block">Сохранить</span>
+            <span class="hidden lg:block">Save</span>
             <CheckIcon fill="#fff" class="w-4 h-4 lg:hidden" />
           </t-button>
         </div>
@@ -39,11 +39,11 @@
     </form>
     <form @submit.prevent="updateUser('last_name')">
       <label>
-        <span class="block mb-2 opacity-80">Ваша фамилия</span>
+        <span class="block mb-2 opacity-80">Last Name</span>
         <div class="relative">
           <t-input
             v-model="user.last_name"
-            placeholder="Введите фамилию"
+            placeholder="..."
             class="w-full pl-12"
           ></t-input>
           <img
@@ -56,7 +56,7 @@
             class="absolute transform -translate-y-1/2 right-2 top-1/2"
             variant="primary"
           >
-            <span class="hidden lg:block">Сохранить</span>
+            <span class="hidden lg:block">Save</span>
             <CheckIcon fill="#fff" class="w-4 h-4 lg:hidden" />
           </t-button>
         </div>

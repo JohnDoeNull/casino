@@ -129,7 +129,6 @@ export default {
     })
     this.socket.emit('game:status')
     this.socket.on('game:status', (data) => {
-      console.log(data.games)
       this.bets = data.games
     })
     this.socket.on('game:done', (data) => {

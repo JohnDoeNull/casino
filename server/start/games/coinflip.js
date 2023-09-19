@@ -163,13 +163,13 @@ const start = async (io, getUser) => {
               const winner = await win_bet.user().first()
               const loser = await lose_bet.user().first()
 
-              winner.balance += 2 * game.amount
+              winner.balance += game.amount + game.amount * 0.9
               await winner.save()
 
               coinflipInstance.emit('game:done', {
                 winner: winner.id,
                 loser: loser.id,
-                amount: game.amount * 2,
+                amount: game.amount * 0.9,
               })
 
               await CoinflipBet.query().where('game_id', game.id).delete()

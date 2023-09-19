@@ -81,11 +81,36 @@ export default {
       }
     },
     scrollToLast() {
-      const lastChildElement = this.$refs.chatContainer.lastElementChild
-      lastChildElement?.scrollIntoView({
-        behavior: 'smooth',
-      })
+      setTimeout(() => {
+        const lastChildElement = this.$refs.chatContainer.lastElementChild
+        lastChildElement?.scrollIntoView({
+          behavior: 'smooth',
+        })
+      }, 100)
     },
   },
 }
 </script>
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #21264a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>

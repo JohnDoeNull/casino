@@ -30,6 +30,7 @@ Route.group(() => {
   Route.post('freebie', 'FreebieController.store')
   Route.get('freebie', 'FreebieController.status')
   Route.post('promocode/using', 'PromocodeController.using')
+  Route.post('withdraw', 'PaymentController.withdraw')
 })
   .prefix('api/v1')
   .middleware(['auth', 'throttle:10,60'])

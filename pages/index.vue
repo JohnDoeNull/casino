@@ -49,6 +49,33 @@ import Chat from '~/components/chat/chat.vue'
 
 export default {
   components: { CoinFlip, Chat },
+  beforeMount() {
+    this.socket = this.$nuxtSocket({
+      channel: 'userbalance',
+      extraHeaders: {
+        Authorization: this.$auth.strategy.token.get(),
+      },
+    })
+    this.socket.on('balance:update', (data) => {
+      if (!this.$auth.loggedIn) {
+        return
+      }
+      if (data.id === this.$auth.user.id) {
+        this.$notify(
+          {
+            group: 'default',
+            type: 'success',
+            text:
+              data.type === 'positive'
+                ? 'Deposited +' + data.amount + '$'
+                : 'Withdrawed ' + data.amount + '$',
+          },
+          4000
+        )
+        this.$auth.fetchUser()
+      }
+    })
+  },
 }
 </script>
 <style></style>

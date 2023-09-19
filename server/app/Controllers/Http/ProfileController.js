@@ -45,7 +45,6 @@ class ProfileController {
 
       if (avatar) {
         const name = `${uuidv4()}.${avatar.subtype}`
-
         await avatar.move(Helpers.publicPath('images/avatar'), {
           overwrite: true,
           name,
@@ -68,7 +67,7 @@ class ProfileController {
         await user.save()
         return response.status(200).send({
           status: 'success',
-          message: 'Ваш аватар обновлён',
+          message: 'Your avatar has been updated',
         })
       }
 

@@ -12,7 +12,7 @@ class UserSchema extends Schema {
       table.string('username', 80).notNullable().unique()
       table.string('email', 254).nullable().unique()
       table.string('password', 60).notNullable()
-      table.float('balance').defaultTo(5000)
+      table.float('balance').defaultTo(0)
       table.float('balance_demo').defaultTo(0)
       table.string('first_name').nullable()
       table.string('last_name').nullable()

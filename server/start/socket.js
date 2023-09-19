@@ -36,6 +36,16 @@ chat_control.start(io, getUser)
 
 let current = 1
 
+const userBalanceInstance = io.of('/userbalance')
+
+Event.on('user::balance', async ({ user, amount, type }) => {
+  userBalanceInstance.emit('balance:update', {
+    id: user.id,
+    amount,
+    type,
+  })
+})
+
 const crashInstance = io
   .of('/crash')
   .use(async (socket, next) => {
