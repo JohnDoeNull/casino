@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div
-      class="container flex flex-wrap items-center h-16 space-x-3 md:space-x-8"
+      class="ml-auto flex flex-wrap items-center h-16 space-x-3 md:space-x-8"
     >
       <nuxt-link
         :to="{ name: 'index' }"
