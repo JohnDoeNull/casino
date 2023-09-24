@@ -1,26 +1,24 @@
 <template>
-  <section class="container">
-    <div class="flex flex-wrap space-x-3 md:space-x-8">
-      <div class="col-span-3 hidden xl:block space-y-3 mb-5 w-[20vw] ml-auto">
-        <chat></chat>
-      </div>
-      <div class="flex-1 mr-auto">
-        <div class="col-span-3 space-y-3 mb-5">
-          <div class="p-8 bg-div-color rounded-xl">
-            <h2 class="mb-3 text-xl font-bold leading-none">
-              Gamble R$ -
-              <a
-                href="https://discord.gg/fiery"
-                class="border-black border-dotted cursor-pointer border-b-1 font-semibold text-primary"
-                target="_blank"
-              >
-                <a class="font-semibold text-primary">Discord</a>
-              </a>
-            </h2>
-          </div>
+  <section class="cac flex flex-wrap space-x-3 md:space-x-8">
+    <div class="col-span-3 hidden xl:block space-y-3 mb-5 w-[20vw] ml-auto">
+      <chat></chat>
+    </div>
+    <div class="flex-1 mr-auto">
+      <div class="col-span-3 space-y-3 mb-5">
+        <div class="p-8 bg-div-color rounded-xl">
+          <h2 class="mb-3 text-xl font-bold leading-none">
+            Gamble R$ -
+            <a
+              href="https://discord.gg/fiery"
+              class="border-black border-dotted cursor-pointer border-b-1 font-semibold text-primary"
+              target="_blank"
+            >
+              <a class="font-semibold text-primary">Discord</a>
+            </a>
+          </h2>
         </div>
-        <coin-flip></coin-flip>
       </div>
+      <coin-flip></coin-flip>
     </div>
 
     <!-- <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

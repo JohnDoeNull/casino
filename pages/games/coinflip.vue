@@ -7,7 +7,7 @@
       </t-button>
     </h1>
     <div
-      class="grid grid-cols-1 gap-4 xl:gap-6 xl:grid-cols-4 overflow-auto h-[vh50]"
+      class="grid grid-cols-1 gap-4 xl:gap-6 xl:grid-cols-4 overflow-auto h-[vh60]"
     >
       <div
         v-for="(bet_child, idx) in bets"

@@ -3,7 +3,7 @@
     <h2 class="mb-3 text-xl font-bold leading-none">Chat</h2>
     <div
       ref="chatContainer"
-      class="flex flex-col mb-3 px-0 py-1 space-y-3 bg-div-color rounded-3xl overflow-auto h-[50vh]"
+      class="flex flex-col mb-3 px-0 py-1 space-y-3 bg-div-color rounded-3xl overflow-auto h-[60vh]"
     >
       <div v-for="(chatObj, idx) in chats" :key="chatObj" :index="idx">
         <chat-box :chatObj="chatObj"> </chat-box>
