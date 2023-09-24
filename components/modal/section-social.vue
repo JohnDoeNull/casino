@@ -1,23 +1,15 @@
 <template>
   <div class="p-4 font-semibold text-center bg-div-color rounded-xl text-md">
-    <div class="mb-2">fiery.gg</div>
+    <div class="mb-2">betbux.gg</div>
     <div class="flex items-center justify-center">
-      <button
-        type="button"
-        class="social social--vk"
-        @click="$auth.loginWith('vkontakte')"
-      >
-        <VkSimpleIcon fill="#fff" class="inline-block w-6 h-auto" />
-      </button>
+      <img src="/logo.svg" fill="#fff" class="inline-block w-20 h-auto" />
     </div>
   </div>
 </template>
 
 <script>
-import VkSimpleIcon from '@/static/img/icon/social/vk-simple.svg?inline'
-
 export default {
-  components: { VkSimpleIcon },
+  components: {},
 }
 </script>
 

@@ -7,7 +7,7 @@
       <div class="col-span-3 space-y-3 mb-5">
         <div class="p-8 bg-div-color rounded-xl">
           <h2 class="mb-3 text-xl font-bold leading-none">
-            Gamble R$ -
+            Give away drops -
             <a
               href="https://discord.gg/fiery"
               class="border-black border-dotted cursor-pointer border-b-1 font-semibold text-primary"
